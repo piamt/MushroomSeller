@@ -1,0 +1,12 @@
+ [
+  {
+  "type": "growing",
+  "image": "seta_cultivo"
+  },
+  
+  {
+  "type": "wild",
+  "image": "seta_silvestre"
+  
+  }
+]

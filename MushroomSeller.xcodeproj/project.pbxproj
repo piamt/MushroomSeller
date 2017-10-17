@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E1106541F9375B200A8AB0B /* Task+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1106531F9375B200A8AB0B /* Task+Utilities.swift */; };
+		0E1106561F93B0F900A8AB0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E1106551F93B0F900A8AB0B /* GoogleService-Info.plist */; };
+		0E1106581F93BA6D00A8AB0B /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1106571F93BA6D00A8AB0B /* Style.swift */; };
+		0E11065A1F93BE7B00A8AB0B /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1106591F93BE7B00A8AB0B /* UIFont+Extension.swift */; };
+		0E11065C1F93C68200A8AB0B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E11065B1F93C68200A8AB0B /* UIColor+Extension.swift */; };
+		0E1106601F93CF2600A8AB0B /* MushroomInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E11065F1F93CF2600A8AB0B /* MushroomInfoResponse.swift */; };
+		0E19F01A1F912FC600FC6D53 /* MushroomListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19F0141F912FC600FC6D53 /* MushroomListRouter.swift */; };
+		0E19F01B1F912FC600FC6D53 /* MushroomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19F0151F912FC600FC6D53 /* MushroomListViewController.swift */; };
+		0E19F01C1F912FC600FC6D53 /* MushroomListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19F0161F912FC600FC6D53 /* MushroomListBuilder.swift */; };
+		0E19F01D1F912FC600FC6D53 /* MushroomInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19F0171F912FC600FC6D53 /* MushroomInfoViewModel.swift */; };
+		0E19F01E1F912FC600FC6D53 /* MushroomListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19F0181F912FC600FC6D53 /* MushroomListPresenter.swift */; };
+		0E19F01F1F912FC600FC6D53 /* MushroomListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19F0191F912FC600FC6D53 /* MushroomListInteractor.swift */; };
+		0E19F0211F91321600FC6D53 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19F0201F91321600FC6D53 /* AppRouter.swift */; };
+		0E19F0241F91341700FC6D53 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19F0231F91341700FC6D53 /* UIView+Extension.swift */; };
+		0E19F02C1F9136B100FC6D53 /* MushroomTypesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19F0261F9136B100FC6D53 /* MushroomTypesBuilder.swift */; };
+		0E19F02E1F9136B100FC6D53 /* MushroomTypesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19F0281F9136B100FC6D53 /* MushroomTypesPresenter.swift */; };
+		0E19F02F1F9136B100FC6D53 /* MushroomTypesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19F0291F9136B100FC6D53 /* MushroomTypesRouter.swift */; };
+		0E19F0301F9136B100FC6D53 /* MushroomTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19F02A1F9136B100FC6D53 /* MushroomTypesViewController.swift */; };
+		0E48E5E71F9147D400740952 /* MushroomTypesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E48E5E61F9147D400740952 /* MushroomTypesInteractor.swift */; };
+		0E48E5F01F914A2A00740952 /* MushroomTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E48E5EF1F914A2A00740952 /* MushroomTypeViewModel.swift */; };
+		0E48E5F51F914CD100740952 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E48E5F21F914CD100740952 /* APIClient.swift */; };
+		0E48E5F61F914CD100740952 /* MushroomTypeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E48E5F41F914CD100740952 /* MushroomTypeResponse.swift */; };
+		0E6A8B851F93E630002BC6FB /* MushroomDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8B841F93E630002BC6FB /* MushroomDetailView.swift */; };
+		0E6A8B871F9402B9002BC6FB /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8B861F9402B9002BC6FB /* UIImageView+Extension.swift */; };
+		0E6A8B891F9405F2002BC6FB /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8B881F9405F2002BC6FB /* UIImage+Extension.swift */; };
+		0EAF34611F96AEC500FEED55 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAF34601F96AEC500FEED55 /* UIStackView+Extension.swift */; };
+		0EBE65CB1F91115500068403 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBE65CA1F91115500068403 /* AppDelegate.swift */; };
+		0EBE65CD1F91115500068403 /* AppRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBE65CC1F91115500068403 /* AppRootViewController.swift */; };
+		0EBE65D21F91115500068403 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBE65D11F91115500068403 /* Assets.xcassets */; };
+		0EBE65D51F91115500068403 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBE65D31F91115500068403 /* LaunchScreen.storyboard */; };
+		0EBE65E01F91115600068403 /* MushroomSellerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBE65DF1F91115600068403 /* MushroomSellerTests.swift */; };
+		0EBE65EB1F91115600068403 /* MushroomSellerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBE65EA1F91115600068403 /* MushroomSellerUITests.swift */; };
+		0EBE65FC1F91119800068403 /* mushroomTypes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBE65FA1F91119800068403 /* mushroomTypes.json */; };
+		0EBE65FD1F91119800068403 /* JsonReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBE65FB1F91119800068403 /* JsonReader.swift */; };
+		2CCEB950288CCD5A0E14736C /* Pods_MushroomSellerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67111BEE8DA764A76CFA9F60 /* Pods_MushroomSellerUITests.framework */; };
+		5217A88D7EBB3B8DDFA9928B /* Pods_MushroomSeller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49453C2963FBB277F5D2BEA6 /* Pods_MushroomSeller.framework */; };
+		62FBD4ED2B76D6EC73A34353 /* Pods_MushroomSellerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5322CD5E884DE8DECC5B9C4 /* Pods_MushroomSellerTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0EBE65DC1F91115600068403 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EBE65BF1F91115500068403 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EBE65C61F91115500068403;
+			remoteInfo = MushroomSeller;
+		};
+		0EBE65E71F91115600068403 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EBE65BF1F91115500068403 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EBE65C61F91115500068403;
+			remoteInfo = MushroomSeller;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07256A44A832448645948AAB /* Pods-MushroomSeller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MushroomSeller.release.xcconfig"; path = "Pods/Target Support Files/Pods-MushroomSeller/Pods-MushroomSeller.release.xcconfig"; sourceTree = "<group>"; };
+		0E1106531F9375B200A8AB0B /* Task+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Utilities.swift"; sourceTree = "<group>"; };
+		0E1106551F93B0F900A8AB0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0E1106571F93BA6D00A8AB0B /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		0E1106591F93BE7B00A8AB0B /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		0E11065B1F93C68200A8AB0B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		0E11065F1F93CF2600A8AB0B /* MushroomInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomInfoResponse.swift; sourceTree = "<group>"; };
+		0E19F0141F912FC600FC6D53 /* MushroomListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MushroomListRouter.swift; sourceTree = "<group>"; };
+		0E19F0151F912FC600FC6D53 /* MushroomListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MushroomListViewController.swift; sourceTree = "<group>"; };
+		0E19F0161F912FC600FC6D53 /* MushroomListBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MushroomListBuilder.swift; sourceTree = "<group>"; };
+		0E19F0171F912FC600FC6D53 /* MushroomInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MushroomInfoViewModel.swift; sourceTree = "<group>"; };
+		0E19F0181F912FC600FC6D53 /* MushroomListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MushroomListPresenter.swift; sourceTree = "<group>"; };
+		0E19F0191F912FC600FC6D53 /* MushroomListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MushroomListInteractor.swift; sourceTree = "<group>"; };
+		0E19F0201F91321600FC6D53 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		0E19F0231F91341700FC6D53 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		0E19F0261F9136B100FC6D53 /* MushroomTypesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomTypesBuilder.swift; sourceTree = "<group>"; };
+		0E19F0281F9136B100FC6D53 /* MushroomTypesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomTypesPresenter.swift; sourceTree = "<group>"; };
+		0E19F0291F9136B100FC6D53 /* MushroomTypesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomTypesRouter.swift; sourceTree = "<group>"; };
+		0E19F02A1F9136B100FC6D53 /* MushroomTypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomTypesViewController.swift; sourceTree = "<group>"; };
+		0E48E5E61F9147D400740952 /* MushroomTypesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomTypesInteractor.swift; sourceTree = "<group>"; };
+		0E48E5EF1F914A2A00740952 /* MushroomTypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomTypeViewModel.swift; sourceTree = "<group>"; };
+		0E48E5F21F914CD100740952 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		0E48E5F41F914CD100740952 /* MushroomTypeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MushroomTypeResponse.swift; sourceTree = "<group>"; };
+		0E6A8B841F93E630002BC6FB /* MushroomDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomDetailView.swift; sourceTree = "<group>"; };
+		0E6A8B861F9402B9002BC6FB /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		0E6A8B881F9405F2002BC6FB /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		0EAF34601F96AEC500FEED55 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		0EBE65C71F91115500068403 /* MushroomSeller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MushroomSeller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EBE65CA1F91115500068403 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0EBE65CC1F91115500068403 /* AppRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootViewController.swift; sourceTree = "<group>"; };
+		0EBE65D11F91115500068403 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0EBE65D41F91115500068403 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0EBE65D61F91115500068403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EBE65DB1F91115600068403 /* MushroomSellerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MushroomSellerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EBE65DF1F91115600068403 /* MushroomSellerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomSellerTests.swift; sourceTree = "<group>"; };
+		0EBE65E11F91115600068403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EBE65E61F91115600068403 /* MushroomSellerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MushroomSellerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EBE65EA1F91115600068403 /* MushroomSellerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomSellerUITests.swift; sourceTree = "<group>"; };
+		0EBE65EC1F91115600068403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EBE65FA1F91119800068403 /* mushroomTypes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mushroomTypes.json; sourceTree = "<group>"; };
+		0EBE65FB1F91119800068403 /* JsonReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonReader.swift; sourceTree = "<group>"; };
+		357C896454343E50F37F4BC0 /* Pods-MushroomSellerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MushroomSellerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MushroomSellerTests/Pods-MushroomSellerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		49453C2963FBB277F5D2BEA6 /* Pods_MushroomSeller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MushroomSeller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67111BEE8DA764A76CFA9F60 /* Pods_MushroomSellerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MushroomSellerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E5905DABF9A168A15286FAF /* Pods-MushroomSellerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MushroomSellerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MushroomSellerUITests/Pods-MushroomSellerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9462E63532E0F3DE226EA01B /* Pods-MushroomSellerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MushroomSellerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MushroomSellerTests/Pods-MushroomSellerTests.release.xcconfig"; sourceTree = "<group>"; };
+		9DE5DF420660E7E985DBFD4E /* Pods-MushroomSellerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MushroomSellerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MushroomSellerUITests/Pods-MushroomSellerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5322CD5E884DE8DECC5B9C4 /* Pods_MushroomSellerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MushroomSellerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDAF11B22524F05C326665F6 /* Pods-MushroomSeller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MushroomSeller.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MushroomSeller/Pods-MushroomSeller.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EBE65C41F91115500068403 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5217A88D7EBB3B8DDFA9928B /* Pods_MushroomSeller.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EBE65D81F91115600068403 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62FBD4ED2B76D6EC73A34353 /* Pods_MushroomSellerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EBE65E31F91115600068403 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CCEB950288CCD5A0E14736C /* Pods_MushroomSellerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E19F0131F912FAA00FC6D53 /* MushroomList */ = {
+			isa = PBXGroup;
+			children = (
+				0E19F0161F912FC600FC6D53 /* MushroomListBuilder.swift */,
+				0E19F0181F912FC600FC6D53 /* MushroomListPresenter.swift */,
+				0E19F0191F912FC600FC6D53 /* MushroomListInteractor.swift */,
+				0E19F0141F912FC600FC6D53 /* MushroomListRouter.swift */,
+				0E19F0151F912FC600FC6D53 /* MushroomListViewController.swift */,
+				0E19F0171F912FC600FC6D53 /* MushroomInfoViewModel.swift */,
+				0E6A8B841F93E630002BC6FB /* MushroomDetailView.swift */,
+			);
+			path = MushroomList;
+			sourceTree = "<group>";
+		};
+		0E19F0221F91340800FC6D53 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0EAF34601F96AEC500FEED55 /* UIStackView+Extension.swift */,
+				0E19F0231F91341700FC6D53 /* UIView+Extension.swift */,
+				0E1106531F9375B200A8AB0B /* Task+Utilities.swift */,
+				0E1106591F93BE7B00A8AB0B /* UIFont+Extension.swift */,
+				0E11065B1F93C68200A8AB0B /* UIColor+Extension.swift */,
+				0E6A8B861F9402B9002BC6FB /* UIImageView+Extension.swift */,
+				0E6A8B881F9405F2002BC6FB /* UIImage+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0E19F0251F91368600FC6D53 /* MushroomTypes */ = {
+			isa = PBXGroup;
+			children = (
+				0E19F0261F9136B100FC6D53 /* MushroomTypesBuilder.swift */,
+				0E19F0281F9136B100FC6D53 /* MushroomTypesPresenter.swift */,
+				0E19F0291F9136B100FC6D53 /* MushroomTypesRouter.swift */,
+				0E19F02A1F9136B100FC6D53 /* MushroomTypesViewController.swift */,
+				0E48E5E61F9147D400740952 /* MushroomTypesInteractor.swift */,
+				0E48E5EF1F914A2A00740952 /* MushroomTypeViewModel.swift */,
+			);
+			path = MushroomTypes;
+			sourceTree = "<group>";
+		};
+		0E48E5F11F914CD100740952 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0E48E5F31F914CD100740952 /* Models */,
+				0E48E5F21F914CD100740952 /* APIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		0E48E5F31F914CD100740952 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0E48E5F41F914CD100740952 /* MushroomTypeResponse.swift */,
+				0E11065F1F93CF2600A8AB0B /* MushroomInfoResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0EBE65BE1F91115500068403 = {
+			isa = PBXGroup;
+			children = (
+				0EBE65C91F91115500068403 /* MushroomSeller */,
+				0EBE65DE1F91115600068403 /* MushroomSellerTests */,
+				0EBE65E91F91115600068403 /* MushroomSellerUITests */,
+				0EBE65C81F91115500068403 /* Products */,
+				7689B3D3D09757F48965D097 /* Pods */,
+				D5DCDDF2253EE92146E2CDB0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0EBE65C81F91115500068403 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EBE65C71F91115500068403 /* MushroomSeller.app */,
+				0EBE65DB1F91115600068403 /* MushroomSellerTests.xctest */,
+				0EBE65E61F91115600068403 /* MushroomSellerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EBE65C91F91115500068403 /* MushroomSeller */ = {
+			isa = PBXGroup;
+			children = (
+				0E48E5F11F914CD100740952 /* API */,
+				0E19F0221F91340800FC6D53 /* Extensions */,
+				0EBE65F91F91116A00068403 /* Scenes */,
+				0EBE65F81F91116100068403 /* Resources */,
+				0EBE65CA1F91115500068403 /* AppDelegate.swift */,
+				0EBE65CC1F91115500068403 /* AppRootViewController.swift */,
+				0E19F0201F91321600FC6D53 /* AppRouter.swift */,
+				0EBE65D11F91115500068403 /* Assets.xcassets */,
+				0EBE65D31F91115500068403 /* LaunchScreen.storyboard */,
+				0E1106551F93B0F900A8AB0B /* GoogleService-Info.plist */,
+				0EBE65D61F91115500068403 /* Info.plist */,
+			);
+			path = MushroomSeller;
+			sourceTree = "<group>";
+		};
+		0EBE65DE1F91115600068403 /* MushroomSellerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0EBE65DF1F91115600068403 /* MushroomSellerTests.swift */,
+				0EBE65E11F91115600068403 /* Info.plist */,
+			);
+			path = MushroomSellerTests;
+			sourceTree = "<group>";
+		};
+		0EBE65E91F91115600068403 /* MushroomSellerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0EBE65EA1F91115600068403 /* MushroomSellerUITests.swift */,
+				0EBE65EC1F91115600068403 /* Info.plist */,
+			);
+			path = MushroomSellerUITests;
+			sourceTree = "<group>";
+		};
+		0EBE65F81F91116100068403 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0EBE65FB1F91119800068403 /* JsonReader.swift */,
+				0EBE65FA1F91119800068403 /* mushroomTypes.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0EBE65F91F91116A00068403 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0E19F0251F91368600FC6D53 /* MushroomTypes */,
+				0E19F0131F912FAA00FC6D53 /* MushroomList */,
+				0E1106571F93BA6D00A8AB0B /* Style.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7689B3D3D09757F48965D097 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDAF11B22524F05C326665F6 /* Pods-MushroomSeller.debug.xcconfig */,
+				07256A44A832448645948AAB /* Pods-MushroomSeller.release.xcconfig */,
+				357C896454343E50F37F4BC0 /* Pods-MushroomSellerTests.debug.xcconfig */,
+				9462E63532E0F3DE226EA01B /* Pods-MushroomSellerTests.release.xcconfig */,
+				9DE5DF420660E7E985DBFD4E /* Pods-MushroomSellerUITests.debug.xcconfig */,
+				7E5905DABF9A168A15286FAF /* Pods-MushroomSellerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D5DCDDF2253EE92146E2CDB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49453C2963FBB277F5D2BEA6 /* Pods_MushroomSeller.framework */,
+				C5322CD5E884DE8DECC5B9C4 /* Pods_MushroomSellerTests.framework */,
+				67111BEE8DA764A76CFA9F60 /* Pods_MushroomSellerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0EBE65C61F91115500068403 /* MushroomSeller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EBE65EF1F91115600068403 /* Build configuration list for PBXNativeTarget "MushroomSeller" */;
+			buildPhases = (
+				5A0E5E2BBD150DD54165480B /* [CP] Check Pods Manifest.lock */,
+				0EBE65C31F91115500068403 /* Sources */,
+				0EBE65C41F91115500068403 /* Frameworks */,
+				0EBE65C51F91115500068403 /* Resources */,
+				61A74D9CF82DAB3624C75771 /* [CP] Embed Pods Frameworks */,
+				A702D90F5BE69B3321B5992C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MushroomSeller;
+			productName = MushroomSeller;
+			productReference = 0EBE65C71F91115500068403 /* MushroomSeller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0EBE65DA1F91115600068403 /* MushroomSellerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EBE65F21F91115600068403 /* Build configuration list for PBXNativeTarget "MushroomSellerTests" */;
+			buildPhases = (
+				5DC498D68D578B7C386A2545 /* [CP] Check Pods Manifest.lock */,
+				0EBE65D71F91115600068403 /* Sources */,
+				0EBE65D81F91115600068403 /* Frameworks */,
+				0EBE65D91F91115600068403 /* Resources */,
+				15AD1001D83D31AC043E5D7D /* [CP] Embed Pods Frameworks */,
+				898E118B4FED93925F77534E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EBE65DD1F91115600068403 /* PBXTargetDependency */,
+			);
+			name = MushroomSellerTests;
+			productName = MushroomSellerTests;
+			productReference = 0EBE65DB1F91115600068403 /* MushroomSellerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0EBE65E51F91115600068403 /* MushroomSellerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EBE65F51F91115600068403 /* Build configuration list for PBXNativeTarget "MushroomSellerUITests" */;
+			buildPhases = (
+				5133F14741CC4695046F0AD2 /* [CP] Check Pods Manifest.lock */,
+				0EBE65E21F91115600068403 /* Sources */,
+				0EBE65E31F91115600068403 /* Frameworks */,
+				0EBE65E41F91115600068403 /* Resources */,
+				7F264C051040CCF606D4BC95 /* [CP] Embed Pods Frameworks */,
+				40A8D4FE8E253283A0E61D4B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EBE65E81F91115600068403 /* PBXTargetDependency */,
+			);
+			name = MushroomSellerUITests;
+			productName = MushroomSellerUITests;
+			productReference = 0EBE65E61F91115600068403 /* MushroomSellerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0EBE65BF1F91115500068403 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Pia;
+				TargetAttributes = {
+					0EBE65C61F91115500068403 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					0EBE65DA1F91115600068403 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0EBE65C61F91115500068403;
+					};
+					0EBE65E51F91115600068403 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0EBE65C61F91115500068403;
+					};
+				};
+			};
+			buildConfigurationList = 0EBE65C21F91115500068403 /* Build configuration list for PBXProject "MushroomSeller" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0EBE65BE1F91115500068403;
+			productRefGroup = 0EBE65C81F91115500068403 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EBE65C61F91115500068403 /* MushroomSeller */,
+				0EBE65DA1F91115600068403 /* MushroomSellerTests */,
+				0EBE65E51F91115600068403 /* MushroomSellerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0EBE65C51F91115500068403 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EBE65D51F91115500068403 /* LaunchScreen.storyboard in Resources */,
+				0E1106561F93B0F900A8AB0B /* GoogleService-Info.plist in Resources */,
+				0EBE65D21F91115500068403 /* Assets.xcassets in Resources */,
+				0EBE65FC1F91119800068403 /* mushroomTypes.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EBE65D91F91115600068403 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EBE65E41F91115600068403 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15AD1001D83D31AC043E5D7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MushroomSellerTests/Pods-MushroomSellerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40A8D4FE8E253283A0E61D4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MushroomSellerUITests/Pods-MushroomSellerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5133F14741CC4695046F0AD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5A0E5E2BBD150DD54165480B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5DC498D68D578B7C386A2545 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		61A74D9CF82DAB3624C75771 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MushroomSeller/Pods-MushroomSeller-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F264C051040CCF606D4BC95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MushroomSellerUITests/Pods-MushroomSellerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		898E118B4FED93925F77534E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MushroomSellerTests/Pods-MushroomSellerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A702D90F5BE69B3321B5992C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MushroomSeller/Pods-MushroomSeller-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EBE65C31F91115500068403 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E19F0241F91341700FC6D53 /* UIView+Extension.swift in Sources */,
+				0EAF34611F96AEC500FEED55 /* UIStackView+Extension.swift in Sources */,
+				0EBE65CD1F91115500068403 /* AppRootViewController.swift in Sources */,
+				0E6A8B871F9402B9002BC6FB /* UIImageView+Extension.swift in Sources */,
+				0E1106601F93CF2600A8AB0B /* MushroomInfoResponse.swift in Sources */,
+				0E19F01F1F912FC600FC6D53 /* MushroomListInteractor.swift in Sources */,
+				0EBE65FD1F91119800068403 /* JsonReader.swift in Sources */,
+				0E19F02E1F9136B100FC6D53 /* MushroomTypesPresenter.swift in Sources */,
+				0E19F01A1F912FC600FC6D53 /* MushroomListRouter.swift in Sources */,
+				0E48E5F51F914CD100740952 /* APIClient.swift in Sources */,
+				0E48E5E71F9147D400740952 /* MushroomTypesInteractor.swift in Sources */,
+				0E48E5F61F914CD100740952 /* MushroomTypeResponse.swift in Sources */,
+				0E6A8B851F93E630002BC6FB /* MushroomDetailView.swift in Sources */,
+				0E1106541F9375B200A8AB0B /* Task+Utilities.swift in Sources */,
+				0E11065A1F93BE7B00A8AB0B /* UIFont+Extension.swift in Sources */,
+				0E19F0301F9136B100FC6D53 /* MushroomTypesViewController.swift in Sources */,
+				0EBE65CB1F91115500068403 /* AppDelegate.swift in Sources */,
+				0E19F02F1F9136B100FC6D53 /* MushroomTypesRouter.swift in Sources */,
+				0E19F01E1F912FC600FC6D53 /* MushroomListPresenter.swift in Sources */,
+				0E19F02C1F9136B100FC6D53 /* MushroomTypesBuilder.swift in Sources */,
+				0E19F01B1F912FC600FC6D53 /* MushroomListViewController.swift in Sources */,
+				0E11065C1F93C68200A8AB0B /* UIColor+Extension.swift in Sources */,
+				0E6A8B891F9405F2002BC6FB /* UIImage+Extension.swift in Sources */,
+				0E19F01D1F912FC600FC6D53 /* MushroomInfoViewModel.swift in Sources */,
+				0E48E5F01F914A2A00740952 /* MushroomTypeViewModel.swift in Sources */,
+				0E19F0211F91321600FC6D53 /* AppRouter.swift in Sources */,
+				0E1106581F93BA6D00A8AB0B /* Style.swift in Sources */,
+				0E19F01C1F912FC600FC6D53 /* MushroomListBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EBE65D71F91115600068403 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EBE65E01F91115600068403 /* MushroomSellerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EBE65E21F91115600068403 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EBE65EB1F91115600068403 /* MushroomSellerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0EBE65DD1F91115600068403 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EBE65C61F91115500068403 /* MushroomSeller */;
+			targetProxy = 0EBE65DC1F91115600068403 /* PBXContainerItemProxy */;
+		};
+		0EBE65E81F91115600068403 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EBE65C61F91115500068403 /* MushroomSeller */;
+			targetProxy = 0EBE65E71F91115600068403 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0EBE65D31F91115500068403 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EBE65D41F91115500068403 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0EBE65ED1F91115600068403 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0EBE65EE1F91115600068403 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0EBE65F01F91115600068403 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDAF11B22524F05C326665F6 /* Pods-MushroomSeller.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L53KSQC6DZ;
+				INFOPLIST_FILE = MushroomSeller/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mushroomseller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0EBE65F11F91115600068403 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07256A44A832448645948AAB /* Pods-MushroomSeller.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L53KSQC6DZ;
+				INFOPLIST_FILE = MushroomSeller/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mushroomseller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0EBE65F31F91115600068403 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 357C896454343E50F37F4BC0 /* Pods-MushroomSellerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MushroomSellerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mushroomseller.MushroomSellerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MushroomSeller.app/MushroomSeller";
+			};
+			name = Debug;
+		};
+		0EBE65F41F91115600068403 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9462E63532E0F3DE226EA01B /* Pods-MushroomSellerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MushroomSellerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mushroomseller.MushroomSellerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MushroomSeller.app/MushroomSeller";
+			};
+			name = Release;
+		};
+		0EBE65F61F91115600068403 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DE5DF420660E7E985DBFD4E /* Pods-MushroomSellerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MushroomSellerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mushroomseller.MushroomSellerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MushroomSeller;
+			};
+			name = Debug;
+		};
+		0EBE65F71F91115600068403 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E5905DABF9A168A15286FAF /* Pods-MushroomSellerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MushroomSellerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mushroomseller.MushroomSellerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MushroomSeller;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EBE65C21F91115500068403 /* Build configuration list for PBXProject "MushroomSeller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EBE65ED1F91115600068403 /* Debug */,
+				0EBE65EE1F91115600068403 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EBE65EF1F91115600068403 /* Build configuration list for PBXNativeTarget "MushroomSeller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EBE65F01F91115600068403 /* Debug */,
+				0EBE65F11F91115600068403 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EBE65F21F91115600068403 /* Build configuration list for PBXNativeTarget "MushroomSellerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EBE65F31F91115600068403 /* Debug */,
+				0EBE65F41F91115600068403 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EBE65F51F91115600068403 /* Build configuration list for PBXNativeTarget "MushroomSellerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EBE65F61F91115600068403 /* Debug */,
+				0EBE65F71F91115600068403 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0EBE65BF1F91115500068403 /* Project object */;
+}
